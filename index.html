@@ -10,8 +10,8 @@
     position: sticky;
     top: 0;
     /*background-color: yellow;*/
-    padding: 50px;
-    font-size: 20px;
+    padding: 0px;
+    font-size: 0px;
     }
 </style>
     <title>Розмалюй Мрії</title>
@@ -455,7 +455,7 @@
                 </div>
             </div>
             <div class="sticky">
-            <div class="col-sm-6 tools">
+            <div class="col-sm-6">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="canvas-buttons col-centered">
@@ -468,7 +468,10 @@
                 </div>
                
                 <input type="hidden" value="#e61cef" id="drawing-color">
-                <div id="colorpicker" class=" col-centered"  style=" margin-top: 30px;">
+    <div class="row">                    
+     <div class="col-sm-4">
+       <div class="row">
+                <div id="colorpicker" class=" col-centered"  style=" margin-top: 10px;">
                     <div id="color-picker" class="cp-default">
                         <div class="picker-wrapper">
                             <div id="picker" class="picker"></div>
@@ -480,12 +483,18 @@
                         </div>
                     </div>
                 </div>
+  </div>
+     </div>
+      <div class="col-sm-2">
+          <div class="row">
                 <div class="well col-centered">
-                    <input id="slider-line-width" type="text" data-slider-min="1" data-slider-max="100"
+                    <input id="slider-line-width" type="text" data-slider-min="1" data-slider-max="60"
                            data-slider-step="1" data-slider-value="25"/>
                     <div>Ширина кісті: <span id="drawing-line-width">25</span></div>
                 </div>
-                </div>
+   </div></div>
+   </div>
+     </div>
             </div>
         </div>
     </div>
